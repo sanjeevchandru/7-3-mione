@@ -1,0 +1,171 @@
+.container{
+    // width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+#banner-sec{
+    background-image: url("https://kingstudio.ro/demos/mione/assets/images/ph-bg7.jpg");
+    background-position: center;
+    background-size: cover;
+    header{
+        .banner-row{
+            display: flex;
+            padding-top: 3%;
+            justify-content: space-between;
+            .nav-logo{
+                width: 7%;
+                img{
+                    width: 100%; 
+                }
+            }
+            .nav-btn{
+                a{
+                    border-right: 1px solid #999;
+                    font-weight: bold;
+                    color: #000;
+                    padding:0 20px;
+                }
+                .right-btn{
+                    border: none;
+                }
+                a:hover{
+                    color: #0978f5;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+    .banner-row2{
+        padding: 13% 0;
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            padding: 30px 0;
+            font-size: 20px;
+            // width: 30%;
+            color: #999;
+        }
+        .banner-address{
+            display: flex;
+            align-items: center;
+            // width: 75%;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 0 10px;
+            border-radius: 5px;
+            .banner-left{
+                // width: 55%;
+                // background-color: red;
+                input{
+                    width: 100%;
+                    padding: 15px;
+                }
+            }
+            .banner-right{
+                display:flex;
+                // width: 40%;
+                
+                justify-content: space-between;
+                align-items: center;
+
+                a{
+                    padding: 15px 10px;
+                    background-color: #0978f5;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    // width: 33.33%;
+                }
+                p{
+                    // width: 33.33%;
+                    text-align: center;
+                }
+                a:hover{
+                    transform: traanslateY(50%);
+                }
+            }
+        }
+    }
+}
+@media(min-width:320px){
+    .banner-row2{
+        p{
+            width: 100%;
+        }
+        .banner-address{
+            width: 100%;
+            flex-wrap: wrap;
+            .banner-left{
+                width: 100%;
+            }
+            .banner-right{
+                padding-top:20px ;
+                width: 100%;
+                flex-wrap: wrap;
+                a{
+                    width: 100%;
+                }
+                P{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:760px){
+    .banner-row2{
+        p{
+            width: 70%;
+        }
+        .banner-address{
+            width: 100%;
+            flex-wrap: wrap;
+            .banner-left{
+                width: 100%;
+            }
+            .banner-right{
+                padding-top: 0;
+                width: 100%;
+                flex-wrap:nowrap;
+                a{
+                    width: 33.33%;
+                }
+                P{
+                    width: 33.33%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media(min-width:960px){
+    .banner-row2{
+        p{
+            width: 30%;
+        }
+        .banner-address{
+            width: 75%;
+            flex-wrap: nowrap;
+            .banner-left{
+                width: 55%;
+            }
+            .banner-right{
+                padding-top: 0;
+                width: 40%;
+                flex-wrap: nowrap;
+                a{
+                    width: 33.33%;
+                }
+                P{
+                    width: 33.33%;
+                }
+            }
+        }
+    }
+}

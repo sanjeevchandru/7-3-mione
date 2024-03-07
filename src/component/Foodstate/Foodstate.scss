@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#state-section{
+    background-color: #f8fbfe;
+    .container{
+        width: 85%;
+        margin: auto;
+        .state-row{
+            padding: 5% 0;
+            // display: flex;
+            // justify-content: space-around;
+            justify-content: space-between;
+            // background-color: red;
+            .state-col{
+                padding: 20px;
+                // width: 25%;
+                .state-card{
+                    display: flex;
+                    background-color: #fff;
+                    padding: 5px;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow: 0 0 10px #e8e7e7;
+                    .state-image{
+                        
+                        width: 30%;
+                        img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .state-cont{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:320px){
+    .state-row{
+        display: flex;
+        flex-wrap: wrap;
+        .state-col{
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:760px){
+    .state-row{
+        display: flex;
+        flex-wrap: wrap;
+        .state-col{
+            width: 50%;
+        }
+    }
+}
+
+@media(min-width:960px){
+    .state-row{
+        display: flex;
+        flex-wrap: nowrap;
+        .state-col{
+            width: 25%;
+        }
+    }
+}

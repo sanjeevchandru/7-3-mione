@@ -1,0 +1,56 @@
+#part-sec{
+    background-image: url("https://kingstudio.ro/demos/mione/assets/images/ph-bg8.jpg");
+    background-size: cover;
+    .part-row{
+        padding: 15% 0;
+    }
+    .part-card{
+        background-color:#fff;
+        box-shadow: 0 0 5px #ccc;
+        // width: 40%;
+        padding: 30px;
+        border-radius: 10px;
+        h3{
+            font-size: 3.5em;
+        }
+        p{
+            font-size: 20px;
+            color: #999;
+            padding: 10px 120px 40px 0 ;
+            // width: 60%;
+        }
+        a{
+            background-color: #0978f5;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+        }
+    }
+}
+@media(min-width:320px){
+    .container{
+        width: 90%;
+        .part-card{
+            width: 100%;
+        }
+    }
+    
+}
+@media(min-width:760px){
+    .container{
+        width: 90%;
+        .part-card{
+            width: 80%;
+        }
+    }
+    
+}
+@media(min-width:960px){
+    .container{
+        width: 85%;
+        .part-card{
+            width: 40%;
+        }
+    }
+    
+}
